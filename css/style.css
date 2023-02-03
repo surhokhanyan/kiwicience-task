@@ -1,0 +1,1205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Axiforma';
+    src: url('fonts/Axiforma-Medium.ttf')  format('truetype');
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1E1E1E;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #212834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+.headerMain{
+    width: 1822.74px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoPlace{
+    width: 162.49px;
+    height: 44.45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.logoPlace img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+nav{
+    width: 1065.17px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainUl{
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainUl li{
+    list-style: none;
+    position: relative;
+    width: 145px;
+    height: 47px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.58px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    z-index: 999;
+}
+.mainUl li img{
+    width: 21.21px;
+    height: 21.21px;
+    object-fit: contain;
+}
+.mainUl li span{
+    margin-top: 3px;
+    font-family: Axiforma;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.mainUl li i{
+    font-size: 16px;
+    color: #ffffff;
+}
+.mainUl li:hover{
+    background: linear-gradient(180deg, #A37DF9 0%, #7B5AC5 100%);
+}
+.subMenu{
+    position: absolute;
+    width: 145px;
+    min-height: 47px;
+    background:linear-gradient(180deg, #463467 0%, #6345a9 100%);
+    top: 47px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subMenu li{
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+.haveSubMenu:hover .subMenu{
+    display: flex;
+}
+.account{
+    width: 95px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accountLogo{
+    width: 40.81px;
+    height: 40.81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.accountLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.account button{
+    width: 27px;
+    height: 27px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.account button img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+main{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background: #1E1E1E;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 13px;
+    padding-top: 19px;
+}
+.left{
+    width: 408px;
+    min-height: 678px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: fixed;
+    left: 54px;
+    top: 99px;
+    z-index: 999;
+}
+.leftMain{
+    width: 100%;
+    height: 678px;
+    background: #212734;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+.leftBtns{
+    width: 378px;
+    height: 98px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.leftBtns button:nth-child(1){
+    width: 196px;
+    height: 40px;
+    background: #1A202C;
+    border: 1px solid #2B3548;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 11.44px;
+    font-family: 'Axiforma';
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    padding-top: 8px;
+}
+.leftBtns button:nth-child(1) i {
+    margin-top: 4px;
+}
+.leftBtns button:nth-child(2){
+    width: 175px;
+    height: 40px;
+    background: linear-gradient(0deg, #1A202C, #1A202C), #FFFFFF;
+    border: 1px solid #2B3548;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'Axiforma';
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+.leftBtns i{
+    color:  #805AD5;
+}
+.inputPlace{
+    width: 378px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inputPlace i{
+    position: absolute;
+    font-size: 19px;
+    color: #805AD5;
+    left: 44.47px;
+}
+.inputPlace input{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #1A202C, #1A202C), #FFFFFF;
+    border: 1px solid #2B3548;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+    font-family: 'Axiforma';
+    font-weight: 300;
+    font-size: 18.3478px;
+    color: #CFCFCF;
+}
+.leftInfos{
+    width: 378px;
+    height: 516.79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.brandName{
+    width: 318px;
+    height: 37px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.brandLogo{
+    width: 137px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brandLogo img{
+    width: 27px;
+    height: 25.04px;
+    object-fit: cover;
+}
+.brandLogo span{
+    font-family: 'Axiforma';
+    font-size: 18px;
+    color: white;
+}
+.brandCourse{
+    width: 100.66px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brandCourse span{
+    margin-top: 4px;
+    font-family: 'Axiforma';
+    font-size: 16px;
+    color: #FF0000;
+}
+.brandCourse img{
+    width: 38.36px;
+    height: 100%;
+    object-fit: contain;
+}
+.delEdit{
+    width: 48px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delEdit i{
+    font-size: 18.5px;
+    color: #B39DDB;
+    cursor: pointer;
+}
+.crypto{
+    width: 378px;
+    height: 234px;
+    background: #1A202C;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cryptoInfo{
+    width: 351px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    border-bottom:1px solid #686868;
+}
+.cryptoInfoLeft{
+    width: 120px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.cryptoInfoLeft img{
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+.cryptoInfoLeft span{
+    font-family: 'Axiforma';
+    font-size: 18px;
+    color: white;
+}
+.cryptoInfoLeft span:nth-child(3){
+    font-size: 22px;
+}
+.cryptoInfoRight{
+    width: 100px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.cryptoInfoRight span{
+    font-family: 'Axiforma';
+    font-size: 16px;
+    color: #61E224;
+}
+.cryptoInfoRight img{
+    width: 100%;
+    height: 48px;
+    object-fit: contain;
+}
+.cryptoBtns{
+    width: 340px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cryptoBtns button{
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding-left: 24px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    gap: 19px;
+    font-family: 'Axiforma';
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.cryptoBtns button.active{
+    background: #2B3548;
+}
+.cryptoBtns button:hover{
+    background: #2B3548;
+}
+.cryptoBtns button img{
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+.coinbase{
+    width: 350px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 29px;
+}
+.coinbaseItems{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.baseLogo{
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.baseLogo img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.baseLogo span{
+    font-family: 'Axiforma';
+    font-size: 18px;
+    color: white;
+}
+.baseCourse{
+    width: 101px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.baseCourse span{
+    font-family: 'Axiforma';
+    font-size: 16px;
+    color: #FF0000;
+}
+.baseCourse img{
+    width: 38.36px;
+    height: 18.65px;
+    object-fit: contain;
+}
+.baseEditDel{
+    width: 48px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.baseEditDel i{
+    font-size: 18.5px;
+    color: #B39DDB;
+    cursor: pointer;
+}
+.leftSubscribe{
+    width: 100%;
+    height: 151.55px;
+    background: #212734;
+    box-shadow: inset 0px -0.2px 1px #805AD5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+    position: relative;
+}
+.leftSubscribeMain{
+    width: 338.71px;
+    height: 105.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.leftSubscribeMain p{
+    font-family: 'Axiforma';
+    font-size: 16.0543px;
+    color: white;
+}
+.leftSubscribeMain span{
+    color: #FF0000;
+}
+.leftSubscribeMain button{
+    width: 338.71px;
+    height: 40px;
+    background: #A37DF9;
+    border-radius: 10px;
+    font-family: 'Axiforma';
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #A37DF9;
+    text-transform: capitalize;
+}
+.leftSubscribeMain button:hover{
+    background: white;
+    color: #A37DF9;
+}
+.subClose{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #1A202C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 11.4px;
+    right: 18.79px;
+    cursor: pointer;
+}
+.subClose i{
+    font-size: 9.5px;
+    color: #F2F2F2;
+}
+.right{
+    width: 1390px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 9px;
+    position: relative;
+    left: 208px;
+    top: 80px;
+}
+.rightPoints{
+    width: 697.88px;
+    height: 348.94px;
+    background: #212734;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 25px;
+}
+.seeMore{
+    position: absolute;
+    background: inherit;
+    border: none;
+    top: 10px;
+    right: 20.36px;
+    font-family: 'Axiforma';
+    font-size: 14px;
+    color: #805AD5;
+    cursor: pointer;
+}
+.rightPointsHeader{
+    width: 370px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+.rightPointsHeader span{
+    font-family: 'Axiforma';
+    font-size: 20px;
+    color: white;
+}
+.rightPointsHeader select{
+    width: 117.64px;
+    height: 30px;
+    background: linear-gradient(180deg, #212834 0%, #262F3D 0.01%, #212734 100%);
+    border: 0.842853px solid #A3A0A0;
+    border-radius: 3.97656px;
+    padding-left: 7.44px;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    color: white;
+}
+.rightPointsHeader select option{
+    background: #2B3548;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    color: black;
+}
+.rightPointsBtns{
+    width: 248.13px;
+    height: 27.49px;
+    background: #1c222c;
+    box-shadow: 0px 4px 0px #11141a;
+    border-radius: 4.0865px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    margin-right: 33.76px;
+}
+.rightPointsBtn{
+    width: 47.74px;
+    height: 13.42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.rightPointsBtn button{
+    width: 11.66px;
+    height: 11.51px;
+    background: none;
+    border: 0.639536px solid #805AD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightPointsBtn button i{
+    color: #61E224;
+    /*display: none;*/
+}
+.rightPointsBtn span{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 11.5116px;
+    text-transform: uppercase;
+}
+.rightPointsBtn:nth-child(1) span{
+    color: #128994;
+}
+.rightPointsBtn:nth-child(2) span{
+    color: #58C925;
+}
+.rightPointsBtn:nth-child(3) span{
+    color: #CAD9FF;
+}
+.rightExchanges{
+    width: 405.66px;
+    height: 348.94px;
+    background: #212834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7.44986px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 26.48px;
+}
+.rightExchanges span{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-self: flex-start;
+    margin-left: 20.22px;
+}
+.exchangesDiagram{
+    width: 240px;
+    height: 260px;
+}
+.exchangesDiagram img{
+    object-fit: contain;
+}
+.rightCoins{
+    width: 267.23px;
+    height: 348.48px;
+    background: #212834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6.71658px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 20px;
+}
+.rightCoins span{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-self: flex-start;
+    margin-left: 20.22px;
+}
+.coinsDiagram{
+    width: 235px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.coinsDiagramLogo{
+    width: 212px;
+    height: 212px;
+    background: url("img/diagram.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.coinsDiagramLogoUp{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between!important;
+}
+.coinsDiagramLogoUp p{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 13.5342px;
+    color: #E3D9FF;
+    text-align: center;
+}
+.coinsDiagramLogoUp p span{
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 13.5342px;
+    color: #97C876;
+}
+.coinsDiagramLogoUp i{
+    font-size: 13.5342px;
+    color: #61E224;
+}
+.coinsDiagramLogoDown{
+    width: 90px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.coinsDiagramLogoDown p{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 13.5342px;
+    color: #E3D9FF;
+    text-align: center;
+}
+.coinsDiagramLogoDown p span{
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 13.5342px;
+    color: #D23737;
+}
+.coinsDiagramLogoDown i{
+    font-size: 13.5342px;
+    color: #FF0000;
+}
+.coinsDiagramLogoDays{
+    width: 235px;
+    height: 25.55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.coinsDiagramLogoDays button{
+    width: 28px;
+    height: 25.55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #212834;
+    background: transparent;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 13.6736px;
+    color: white;
+    cursor: pointer;
+}
+.coinsDiagramLogoDays button:hover{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.coinsDiagramLogoDays button.active{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.rightPaterson{
+    width: 430.85px;
+    height: 312.8px;
+    background: url("img/diagram3.png") #212734;
+    box-shadow: 0px 3.44681px 3.44681px rgba(0, 0, 0, 0.25);
+    border-radius: 12.9256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.patersonDiagram{
+    width: 310px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13.49px;
+}
+.patersonDiagram button{
+    width: 36.17px;
+    height: 32.78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background: transparent;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 17.6622px;
+    color: white;
+    cursor: pointer;
+}
+.patersonDiagram button:hover{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.patersonDiagram button.active{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.rightPatersonName{
+    width: 385px;
+    height: 82px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 21.72px;
+    margin-top: 20.68px;
+}
+.rightPatersonNameLogo{
+    width: 78px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #805AD5;
+    border-radius: 50%;
+}
+.rightPatersonNameLogo span{
+    margin-top: 7px;
+    font-family: 'Axiforma';
+    font-size: 38px;
+    color: white;
+}
+.rightPatersonNameInfo{
+    width: 250px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.rightPatersonNameInfo span:nth-child(1){
+    font-family: 'Axiforma';
+    font-weight: 300;
+    font-size: 24.5409px;
+    color: #805AD5;
+}
+.rightPatersonNameInfo span:nth-child(2){
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 18.9575px;
+    color: white;
+}
+.rightAnalytics{
+    width: 461.81px;
+    height: 314.31px;
+    background: #212834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5.61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 17.29px;
+}
+.rightAnalytics span:nth-child(1){
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-self: flex-start;
+    margin-left: 20.22px;
+}
+.rightAnalyticsBtns{
+    width: 388.4px;
+    height:236.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightAnalyticsBtns button{
+    width: 388.48px;
+    height: 47.68px;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    border: 0.681439px solid #805AD5;
+    filter: drop-shadow(0px 2.72575px 2.72575px rgba(0, 0, 0, 0.25));
+    border-radius: 9.53605px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.rightAnalyticsBtns button:hover{
+    background: #322256;
+}
+.rightAnalyticsBtns button img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-left: 27.53px;
+}
+.rightAnalyticsBtns button p:nth-child(2){
+    width: 178px;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 13.6288px;
+    color: #996FF8;
+    text-align: left;
+}
+.rightAnalyticsBtns button p img{
+    width: 14.3px;
+    height: 14.3px;
+    object-fit: contain;
+    margin-left: 0;
+}
+.rightAnalyticsBtns button p:nth-child(3){
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 13.6288px;
+    color: white;
+    text-align: right;
+    margin-right: 12.28px;
+}
+.rightFutures{
+    width: 464.49px;
+    height: 313.31px;
+    background: #242A39;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4.38803px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 4px;
+}
+.rightFutures span:nth-child(1){
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 15.8703px;
+    color: white;
+    align-self: flex-start;
+    margin-left: 20.22px;
+}
+.futuresPrice{
+    width: 412.08px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    border: 0.482541px solid #686868;
+    border-radius: 5px;
+}
+.futuresPriceTime{
+    width: 155px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.futuresPriceTime p:nth-child(1){
+    font-family: 'Axiforma';
+    font-size: 11.2645px;
+    color: white;
+}
+.futuresPriceTime p:nth-child(2){
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.9133px;
+    font-weight: 400;
+    color: #61E224;
+}
+.futuresPriceTime p:nth-child(2) span{
+    color: #FF0000;
+}
+.futuresPrice button{
+    width: 160px;
+    height: 49px;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    border: 0.239945px solid #686868;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 2.48626px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Axiforma';
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+.futuresPrice button:hover{
+    background: #2B3548;
+}
+.futuresDiagram{
+    width: 412.08px;
+    height: 120px;
+    background: url("img/diagram2.png");
+    background-position: center;
+    background-size: contain;
+    border: 0.482541px solid #686868;
+    border-radius: 2.41271px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 7px;
+}
+.futuresDiagram button{
+    width: 19.29px;
+    height: 17.62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #212834;
+    background: transparent;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 9.43129px;
+    color: white;
+    cursor: pointer;
+}
+.futuresDiagram button:hover{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.futuresDiagram button.active{
+    border-color: #A3A0A0;
+    background: #1A202C;
+}
+.futuresWallet{
+    width: 412.08px;
+    height: 54.71px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35.71px;
+}
+.futuresWalletItem{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.futuresWalletItem:nth-child(1){
+    width: 65.07px;
+}
+.futuresWalletItem:nth-child(2){
+    width:102.36px;
+}
+.futuresWalletItem:nth-child(3){
+    width: 97.16px;
+}
+.futuresWalletItem p:nth-child(1){
+    height: 27.3px;
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 12.6962px;
+    color: #FFFFFF;
+    border-bottom:  0.786545px dashed #DCCDFF;
+}
+.futuresWalletItem p:nth-child(2){
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 12.6962px;
+    color: #805AD5;
+}
+.rightHolidays{
+    width: 1391px;
+    height: 333px;
+    background: #212834;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 10.93px;
+    gap: 12.08px;
+}
+.rightHolidays span:nth-child(1){
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-self: flex-start;
+    margin-left: 19px;
+}
+table{
+    width: 100%;
+    min-height: 200px;
+    border-collapse: collapse;
+}
+.tableHeader{
+    width: 100%;
+    height: 53px;
+    background: #272E3C;
+}
+.tableHeader th{
+    font-family: 'Axiforma';
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+.tableHeader th:nth-child(1){
+    width: 286px;
+    padding-left: 64px;
+}
+.tableHeader th:nth-child(2){
+    width: 149px;
+}
+.tableHeader th:nth-child(3){
+    width: 140px;
+}
+.tableHeader th:nth-child(4){
+    width: 169px;
+}
+.tableHeader th:nth-child(5){
+    width: 190px;
+}
+.tableHeader th:nth-child(6){
+    width: 167px;
+}
+.tableHeader th:nth-child(7){
+    width: 207px;
+}
+.tableHeader th:nth-child(8){
+    width: 147px;
+}
+.tableItem{
+    width: 100%;
+    height: 72px;
+    border-bottom:  1px solid #3B3D50;
+}
+.tableItem td:nth-child(1){
+    padding-left: 64px;
+}
+.tableItem td:nth-child(1) img{
+    width: 21.88px;
+    height: 20.13px;
+    object-fit: contain;
+}
+.tableItem td:nth-child(4){
+    padding-left: 4px;
+    color: #34D35C;
+}
+.tableItem td:nth-child(4) i{
+    margin-right: 9.31px;
+}
+.tableItem td{
+    font-family: 'Axiforma';
+    font-weight: 400;
+    font-size: 18px;
+    color: #ECECEC;
+}

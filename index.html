@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/6b2a90d889.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test Task</title>
+</head>
+<body>
+    <header>
+        <div class="headerMain">
+            <a href="index.html" class="logoPlace">
+                <img src="css/img/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul class="mainUl">
+                    <li>
+                        <img src="css/img/icon1.png" alt="Icon">
+                        <span>Home</span>
+                    </li>
+                    <li class="haveSubMenu">
+                        <img src="css/img/icon2.png" alt="Icon">
+                        <span>Portfolio</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subMenu">
+                            <li>
+                                <img src="css/img/icon1.png" alt="Icon">
+                                <span>Sub</span>
+                            </li>
+                            <li>
+                                <img src="css/img/icon6.png" alt="Icon">
+                                <span>Menu</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="css/img/icon3.png" alt="Icon">
+                        <span>Pricing</span>
+                    </li>
+                    <li>
+                        <img src="css/img/icon4.png" alt="Icon">
+                        <span>Marketplace</span>
+                    </li>
+                    <li>
+                        <img src="css/img/icon5.png" alt="Icon">
+                        <span>Futures</span>
+                    </li>
+                    <li class="haveSubMenu">
+                        <img src="css/img/icon6.png" alt="Icon">
+                        <span>Settings</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subMenu">
+                            <li>
+                                <img src="css/img/icon1.png" alt="Icon">
+                                <span>Sub</span>
+                            </li>
+                            <li>
+                                <img src="css/img/icon6.png" alt="Icon">
+                                <span>Menu</span>
+                            </li>
+                            <li>
+                                <img src="css/img/icon6.png" alt="Icon">
+                                <span>Sub Menu</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="account">
+                <div class="accountLogo">
+                    <img src="css/img/account.png" alt="account">
+                </div>
+                <button>
+                    <img src="css/img/light.png" alt="light">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="leftMain">
+                <div class="leftBtns">
+                    <button>Hide small balances <i class="fa-solid fa-eye-slash"></i></button>
+                    <button>Sort <i class="fa-solid fa-arrow-down-wide-short"></i></button>
+                    <div class="inputPlace">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search your exchange">
+                    </div>
+                </div>
+                <div class="leftInfos">
+                    <div class="brandName">
+                        <div class="brandLogo">
+                            <img src="css/img/brand.png" alt="Brand">
+                            <span>Metamask</span>
+                        </div>
+                        <div class="brandCourse">
+                            <span>4.85%</span>
+                            <img src="css/img/course.png" alt="course">
+                        </div>
+                        <div class="delEdit">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="crypto">
+                        <div class="cryptoInfo">
+                            <div class="cryptoInfoLeft">
+                                <img src="css/img/binance.png" alt="binance">
+                                <span>Binance</span>
+                                <span>$1000.00</span>
+                            </div>
+                            <div class="cryptoInfoRight">
+                                <span>4.85%</span>
+                                <img src="css/img/course1.png" alt="course">
+                            </div>
+                        </div>
+                        <div class="cryptoBtns">
+                            <button>
+                                <img src="css/img/binance.png" alt="binance">
+                                Binance Savings
+                            </button>
+                            <button class="active">
+                                <img src="css/img/binance.png" alt="binance">
+                                Binance Futures
+                            </button>
+                        </div>
+                    </div>
+                    <div class="coinbase">
+                        <div class="coinbaseItems">
+                            <div class="baseLogo">
+                                <img src="css/img/coin.png" alt="Logo">
+                                <span>Coinbase</span>
+                            </div>
+                            <div class="baseCourse">
+                                <span>4.85%</span>
+                                <img src="css/img/course.png" alt="course">
+                            </div>
+                            <div class="baseEditDel">
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="coinbaseItems">
+                            <div class="baseLogo">
+                                <img src="css/img/coin.png" alt="Logo">
+                                <span>Coinbase</span>
+                            </div>
+                            <div class="baseCourse">
+                                <span>4.85%</span>
+                                <img src="css/img/course.png" alt="course">
+                            </div>
+                            <div class="baseEditDel">
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="coinbaseItems">
+                            <div class="baseLogo">
+                                <img src="css/img/coin.png" alt="Logo">
+                                <span>Coinbase</span>
+                            </div>
+                            <div class="baseCourse">
+                                <span>4.85%</span>
+                                <img src="css/img/course.png" alt="course">
+                            </div>
+                            <div class="baseEditDel">
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="coinbaseItems">
+                            <div class="baseLogo">
+                                <img src="css/img/coin.png" alt="Logo">
+                                <span>Coinbase</span>
+                            </div>
+                            <div class="baseCourse">
+                                <span>4.85%</span>
+                                <img src="css/img/course.png" alt="course">
+                            </div>
+                            <div class="baseEditDel">
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftSubscribe">
+                <div class="leftSubscribeMain">
+                    <p>Your free trial has been started․ There are <span>5 days</span> left.</p>
+                    <button>subscribe</button>
+                </div>
+                <div class="subClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightPoints">
+                <div class="rightPointsHeader">
+                    <span>Total Points</span>
+                    <select>
+                        <option>All</option>
+                        <option>One</option>
+                        <option>Two</option>
+                    </select>
+                    <select>
+                        <option>1 year</option>
+                        <option>2 year</option>
+                        <option>3 year</option>
+                    </select>
+                </div>
+                <div class="rightPointsDiagram">
+                    <canvas id="buyers" width="640" height="216"></canvas>
+                </div>
+                <div class="rightPointsBtns">
+                    <div class="rightPointsBtn" id="usd">
+                        <button>
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <span>usd</span>
+                    </div>
+                    <div class="rightPointsBtn" id="btc">
+                        <button>
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <span>btc</span>
+                    </div>
+                    <div class="rightPointsBtn" id="eth">
+                        <button>
+
+                        </button>
+                        <span>eth</span>
+                    </div>
+                </div>
+                <button class="seeMore">See more</button>
+            </div>
+            <div class="rightExchanges">
+                <span>Most usable exchanges</span>
+                <div class="exchangesDiagram">
+                    <img src="css/img/dia.png" alt="diagram">
+                </div>
+                <button class="seeMore">See more</button>
+            </div>
+            <div class="rightCoins">
+                <span>Coins</span>
+                <div class="coinsDiagram">
+                    <div class="coinsDiagramLogo">
+                        <div class="coinsDiagramLogoUp">
+                            <p>TOP <span>Gainer</span></p>
+                            <p>Apecoin</p>
+                            <p><i class="fa-solid fa-arrow-up"></i> 0.74%</p>
+                        </div>
+                        <div class="coinsDiagramLogoDown">
+                            <p>TOP <span>Looser</span></p>
+                            <p>Apecoin</p>
+                            <p><i class="fa-solid fa-arrow-down"></i> 0.74%</p>
+                        </div>
+                    </div>
+                    <div class="coinsDiagramLogoDays">
+                        <button>1h</button>
+                        <button>24h</button>
+                        <button class="active">7d</button>
+                        <button>1m</button>
+                        <button>3m</button>
+                        <button>6m</button>
+                        <button>1y</button>
+                        <button>All</button>
+                    </div>
+                </div>
+                <button class="seeMore">See more</button>
+            </div>
+            <div class="rightPaterson">
+                <div class="rightPatersonName">
+                    <div class="rightPatersonNameLogo">
+                        <span>D</span>
+                    </div>
+                    <div class="rightPatersonNameInfo">
+                        <span><i class="fa-solid fa-rotate"></i> $ 855,914.000 </span>
+                        <span>Mr. Nick Peterson</span>
+                    </div>
+                </div>
+                <div class="patersonDiagram">
+                    <button>1h</button>
+                    <button>24h</button>
+                    <button class="active">7d</button>
+                    <button>1m</button>
+                    <button>3m</button>
+                    <button>6m</button>
+                    <button>1y</button>
+                    <button>All</button>
+                </div>
+            </div>
+            <div class="rightAnalytics">
+                <span>Analytics</span>
+                <div class="rightAnalyticsBtns">
+                    <button>
+                        <img src="css/img/icon7.png" alt="icon">
+                        <p>Total Trade Count</p>
+                        <p>128</p>
+                    </button>
+                    <button>
+                        <img src="css/img/icon8.png" alt="icon">
+                        <p>The Most Used Exchanges</p>
+                        <p><img src="css/img/binance.png" alt="logo"> Binance</p>
+                    </button>
+                    <button>
+                        <img src="css/img/icon9.png" alt="icon">
+                        <p>Total Withdraw</p>
+                        <p>$200</p>
+                    </button>
+                    <button>
+                        <img src="css/img/icon10.png" alt="icon">
+                        <p>Total Fee Paid</p>
+                        <p>$12</p>
+                    </button>
+                </div>
+                <button class="seeMore">See more</button>
+            </div>
+            <div class="rightFutures">
+                <span>Futures</span>
+                <div class="futuresPrice">
+                    <div class="futuresPriceTime">
+                        <p>3/22/2022 17:51:03 PM</p>
+                        <p><i class="fa-solid fa-arrow-trend-up"></i> $0.74 <span><i class="fa-solid fa-arrow-trend-down"></i> 0.58%</span></p>
+                    </div>
+                    <button>$3,698.58</button>
+                </div>
+                <div class="futuresDiagram">
+                    <button>1h</button>
+                    <button>24h</button>
+                    <button class="active">7d</button>
+                    <button>1m</button>
+                    <button>3m</button>
+                    <button>6m</button>
+                    <button>1y</button>
+                    <button>All</button>
+                </div>
+                <div class="futuresWallet">
+                    <div class="futuresWalletItem">
+                        <p>Asset:</p>
+                        <p style="color: white">ES</p>
+                    </div>
+                    <div class="futuresWalletItem">
+                        <p>Margin balance</p>
+                        <p>$12.50</p>
+                    </div>
+                    <div class="futuresWalletItem">
+                        <p>Wallet balance</p>
+                        <p>$5,225.00</p>
+                    </div>
+                </div>
+                <button class="seeMore">See more</button>
+            </div>
+            <div class="rightHolidays">
+                <span>Holdings</span>
+                <table>
+                    <tr class="tableHeader">
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>1 Hour Charge</th>
+                        <th>Market Cap</th>
+                        <th>Price in BTC</th>
+                        <th>Price Graph(7D)</th>
+                        <th><i class="fa-solid fa-bars"></i></th>
+                    </tr>
+                    <tr class="tableItem">
+                        <td>
+                            <img src="css/img/log.png" alt="Logo">
+                            Aave Abat v2
+                        </td>
+                        <td>99</td>
+                        <td>$56.48</td>
+                        <td><i class="fa-solid fa-caret-up"></i> 1.88%</td>
+                        <td>72.8B</td>
+                        <td>9.12455558</td>
+                        <td>
+                            <img src="css/img/adiag.png" alt="Diag">
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="tableItem">
+                        <td>
+                            <img src="css/img/log.png" alt="Logo">
+                            Aave Abat v2
+                        </td>
+                        <td>99</td>
+                        <td>$56.48</td>
+                        <td><i class="fa-solid fa-caret-up"></i> 1.88%</td>
+                        <td>72.8B</td>
+                        <td>9.12455558</td>
+                        <td>
+                            <img src="css/img/adiag.png" alt="Diag">
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="tableItem">
+                        <td>
+                            <img src="css/img/log.png" alt="Logo">
+                            Aave Abat v2
+                        </td>
+                        <td>99</td>
+                        <td>$56.48</td>
+                        <td><i class="fa-solid fa-caret-up"></i> 1.88%</td>
+                        <td>72.8B</td>
+                        <td>9.12455558</td>
+                        <td>
+                            <img src="css/img/adiag.png" alt="Diag">
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                </table>
+                <button class="seeMore">See more</button>
+            </div>
+        </div>
+    </main>
+<script src="js/script.js"></script>
+</body>
+</html>
